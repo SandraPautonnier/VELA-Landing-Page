@@ -5,13 +5,13 @@
 }
 
 :root {
-    --blue-primary: #3c7da3;
+    --blue-primary: #107ce1;
     --blue-dark: #071b43;
     --bg-main: #F7FAFD;
     --white: #FFFFFF;
     --gray-border: #E6EDF5;
     --gray-text: #495368;
-    --button-blue: #3c7da3;
+    --button-blue: #107ce1;
 
     --font-title: 'Manrope', sans-serif;
     --font-text: 'Inter', sans-serif;
@@ -156,7 +156,7 @@ body {
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: #3c7da3;
+    color: var(--blue-primary);
     background: #e8f3f9;
     border: 1px solid #e8f3f9;
     border-radius: 20px;
@@ -244,9 +244,10 @@ body {
 }
 
 .feature-icon {
-    font-size: 26px;
+    font-size: 36px;
     flex-shrink: 0;
     margin-top: 2px;
+    color: #107ce1;
 }
 
 .feature-body h3 {
@@ -722,6 +723,8 @@ body {
     border: 1px solid var(--gray-border);
     text-align: center;
     transition: box-shadow 0.2s, transform 0.2s;
+    display: flex;
+    flex-direction: column;
 }
 
 .level-card:hover {
@@ -751,6 +754,22 @@ body {
     color: var(--gray-text);
     line-height: 1.5;
 }
+
+.level-ca {
+    display: block;
+    font-family: var(--font-text);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    margin-top: auto;
+    padding-top: 14px;
+}
+
+.level-ca.fondateurs     { color: #DC2626; }
+.level-ca.lanceurs       { color: #2F6BFF; }
+.level-ca.accelerateurs  { color: #0891B2; }
+.level-ca.consolidateurs { color: #EA6C00; }
+.level-ca.capitaines     { color: #CA8A04; }
 
 /* Level colors */
 .level-name.fondateurs     { color: #DC2626; }
