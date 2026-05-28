@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Inscription confirmée — VELA Business Media</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        .confirmation-page {
+            min-height: calc(100vh - 72px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-main);
+            padding: 60px 24px;
+        }
+
+        .confirmation-box {
+            text-align: center;
+            max-width: 480px;
+        }
+
+        .confirmation-icon {
+            width: 72px;
+            height: 72px;
+            border-radius: 20px;
+            background: rgba(16, 124, 225, 0.08);
+            border: 1px solid rgba(16, 124, 225, 0.18);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 32px;
+            font-size: 30px;
+            color: var(--blue-primary);
+        }
+
+        .confirmation-title {
+            font-family: var(--font-title);
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--blue-dark);
+            margin-bottom: 16px;
+            line-height: 1.1;
+        }
+
+        .confirmation-sub {
+            font-family: var(--font-text);
+            font-size: 16px;
+            color: var(--gray-text);
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        .confirmation-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-family: var(--font-text);
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--blue-primary);
+            text-decoration: none;
+            transition: gap 0.2s;
+        }
+
+        .confirmation-back:hover {
+            gap: 12px;
+        }
+
+        .confirmation-back svg {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" style="text-decoration:none;">
+                    <div class="logo">
+                        <div class="logo-main">
+                            <span class="logo-v">V</span><span class="logo-text">ELA</span>
+                        </div>
+                        <span class="logo-sub">BUSINESS MEDIA</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Confirmation -->
+    <main class="confirmation-page">
+        <div class="confirmation-box">
+            <div class="confirmation-icon">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h1 class="confirmation-title">C'est noté ✓</h1>
+            <p class="confirmation-sub">Vous serez prévenu en priorité dès l'ouverture le 4 juin.</p>
+            <a href="index.html" class="confirmation-back">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Retour à la page principale
+            </a>
+        </div>
+    </main>
+</body>
+</html>
