@@ -1,27 +1,3 @@
-// Formulaire waitlist — fetch Brevo sans redirection
-(function () {
-    const form = document.querySelector('.waitlist-form');
-    if (!form) return;
-
-    form.addEventListener('submit', function (e) {
-        e.preventDefault();
-
-        const data = new FormData(form);
-
-        fetch(form.action, {
-            method: 'POST',
-            body: data,
-            mode: 'no-cors'
-        }).finally(function () {
-            // Confirmation visible quelle que soit la réponse (no-cors = opaque)
-            const msg = document.createElement('p');
-            msg.textContent = 'C\'est noté — vous serez prévenu le 4 juin.';
-            msg.style.cssText = 'font-size:14px;font-weight:500;color:#107ce1;margin-top:16px;';
-            form.replaceWith(msg);
-        });
-    });
-})();
-
 // Compte à rebours — lancement 4 juin 2026
 (function () {
     const target = new Date('2026-06-04T00:00:00+02:00');
