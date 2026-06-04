@@ -1,28 +1,3 @@
-// Compte à rebours — lancement 4 juin 2026
-(function () {
-    const target = new Date('2026-06-04T00:00:00+02:00');
-    const el = document.getElementById('hero-countdown');
-    if (!el) return;
-
-    function tick() {
-        const diff = target - new Date();
-        if (diff <= 0) {
-            el.textContent = 'Ouverture en cours';
-            return;
-        }
-        const days  = Math.floor(diff / 86400000);
-        const hours = Math.floor((diff % 86400000) / 3600000);
-        const mins  = Math.floor((diff % 3600000)  / 60000);
-        el.textContent =
-            String(days).padStart(2, '0') + 'j · ' +
-            String(hours).padStart(2, '0') + 'h · ' +
-            String(mins).padStart(2, '0') + 'm';
-    }
-
-    tick();
-    setInterval(tick, 1000);
-})();
-
 // Dynamic copyright year
 document.getElementById('footer-year').textContent = new Date().getFullYear();
 
