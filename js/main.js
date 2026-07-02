@@ -49,7 +49,7 @@ if (playBtn && videoThumb) {
         // Lancer la vidéo via l'API Wistia
         window._wq = window._wq || [];
         window._wq.push({
-            id: 'hscdrx3iyb',
+            id: 'pxdogro148',
             onReady: function(video) {
                 video.play();
             }
